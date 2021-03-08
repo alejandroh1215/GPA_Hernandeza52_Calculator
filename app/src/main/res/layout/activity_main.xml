@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/backcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/classgrade5"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:ems="10"
+        android:hint="Enter grade for class 5"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/classtext5"
+        app:layout_constraintTop_toBottomOf="@+id/classgrade4" />
+
+    <TextView
+        android:id="@+id/classtext2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:text="Class 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classtext1" />
+
+    <TextView
+        android:id="@+id/classtext3"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:text="Class 3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classtext2" />
+
+    <TextView
+        android:id="@+id/classtext4"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:text="Class 4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classtext3" />
+
+    <TextView
+        android:id="@+id/classtext5"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:text="Class 5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classtext4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/classgrade2"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:ems="10"
+        android:hint="Enter grade for class 2"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/classtext2"
+        app:layout_constraintTop_toBottomOf="@+id/classgrade" />
+
+    <EditText
+        android:id="@+id/classgrade3"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:ems="10"
+        android:hint="Enter grade for class 3"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/classtext3"
+        app:layout_constraintTop_toBottomOf="@+id/classgrade2" />
+
+    <EditText
+        android:id="@+id/classgrade"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="204dp"
+        android:ems="10"
+        android:hint="Enter grade for class 1"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/classtext1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/classgrade4"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:ems="10"
+        android:hint="Enter grade for class 4"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/classtext4"
+        app:layout_constraintTop_toBottomOf="@+id/classgrade3" />
+
+    <TextView
+        android:id="@+id/classtext1"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="204dp"
+        android:text="Class 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="24dp"
+        android:text="Compute GPA"
+        app:layout_constraintEnd_toStartOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/classtext5" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="152dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="60dp"
+        android:text="Your Calculated GPA is :"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classgrade5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
